@@ -1,0 +1,94 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+body {
+    margin: auto;
+    position: relative;
+    background-color: #f8fafc;
+    /* Light gray background */
+    color: #1e293b;
+    /* Dark text for readability */
+}
+
+/* Override text-white classes for light theme */
+.text-white {
+    color: #1e293b !important;
+}
+
+/* Gray text should be darker for readability */
+.text-gray-200,
+.text-gray-300,
+.text-gray-400 {
+    color: #4b5563 !important;
+}
+
+.text-gray-500 {
+    color: #374151 !important;
+}
+
+/* Card shadows for light theme */
+.shadow-\[0_0_10px_black\] {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1) !important;
+    background-color: white;
+    color: #1e293b;
+}
+
+/* Yellow text stays yellow */
+.text-yellow-500 {
+    color: #ca8a04 !important;
+    /* Slightly darker for better contrast */
+}
+
+/* Green text */
+.text-green-500,
+.text-green-400 {
+    color: #16a34a !important;
+}
+
+/* Keep colored buttons visible */
+.bg-yellow-500,
+.bg-yellow-600 {
+    color: #000 !important;
+}
+
+.bg-green-600,
+.bg-green-500,
+.bg-red-600,
+.bg-red-500,
+.bg-blue-500,
+.bg-blue-600,
+.bg-pink-600 {
+    color: #fff !important;
+}
+
+/* Dark backgrounds keep light text */
+.bg-zinc-800,
+.bg-zinc-700,
+.bg-gray-900 {
+    color: #fff !important;
+}
+
+.bg-zinc-800 *,
+.bg-zinc-700 *,
+.bg-gray-900 * {
+    color: inherit;
+}
+
+/* Fix footer text */
+footer.bg-gray-900,
+footer.bg-gray-900 * {
+    color: #fff !important;
+}
+
+/* Ensure main content text is readable */
+p,
+span,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: inherit;
+}
